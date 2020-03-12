@@ -1,0 +1,25 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a{
+    text-decoration: none;
+}
+
+header li{
+    list-style-type: none;
+}
+
+header .sikuten{
+    font-size: 30px;
+    font-weight: 700;
+}
