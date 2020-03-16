@@ -20,8 +20,12 @@ header{
 
 header ul{
     display: flex;
+    position: relative;
 }
 
+.toggle{
+    display: none;
+}
 header ul li a{
     text-decoration: none;
     color: #fff;
@@ -50,7 +54,7 @@ section{
     position: relative;
     align-items: center;
     justify-content: space-between; */
-    padding: 280px 100px 280px;
+    padding: 200px 100px 280px;
 }
 
 section h2{
@@ -79,7 +83,26 @@ section:nth-child(odd){
         width: 100%;
         height: calc(100vh - 70px);
         padding: 50px 0px;    
-        opacity: 1;
+        opacity: 0;
+        /* transform: translateY(-100%); */
         
     }
+
+    .active ul{
+        opacity: 1;
+        top: 70px;
+        /* transform: translateY(0); */
+    }
+    
+    .toggle{
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        background-color: #fff;        
+        
+       
+    }
+    
 }

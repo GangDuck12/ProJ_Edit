@@ -5,15 +5,16 @@
     <link rel="stylesheet" href="BM.css">
 </head>
 <body>
-    <header>
+    <header id="header">
         <a href="#" class="sikuten">SIKUTEN</a>
         <ul>
-            <li><a href="#coffee">Coffee</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#store">Store</a></li>
-            <li><a href="#responsibility">Responsibility</a></li>
-            <li><a href="#new">New</a></li>
+            <li><a href="#coffee" onclick="toggle()">Coffee</a></li>
+            <li><a href="#menu" onclick="toggle()">Menu</a></li>
+            <li><a href="#store" onclick="toggle()">Store</a></li>
+            <li><a href="#responsibility" onclick="toggle()">Responsibility</a></li>
+            <li><a href="#new" onclick="toggle()">New</a></li>
         </ul>
+        <div class="toggle" onclick="toggle()"></div>
     </header>
     <section id="coffee">
         <div>
@@ -45,5 +46,12 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi blanditiis sint cupiditate reiciendis veniam ducimus nesciunt odio porro earum debitis eius voluptates commodi, ipsum ad quaerat fuga a harum. Adipisci eius ipsa blanditiis ab minima cum sed veritatis fugit, accusantium eligendi quasi eaque aspernatur, necessitatibus ea? Impedit, magnam in consequatur aut nostrum repellendus amet ab mollitia magni. Quas, distinctio. Culpa, laudantium! Nesciunt cumque odit fuga ullam quidem illo nam fugiat corporis sed, minus officiis expedita perspiciatis fugit itaque molestiae eum sit recusandae nostrum repellendus cupiditate vitae aut! Veniam, voluptas. Natus temporibus vero harum tempora qui consequatur velit, reprehenderit molestiae voluptatibus.</p>
         </div>
     </section>
+    <script>
+        function toggle(){
+            var header = document.getElementById("header");
+
+            header.classList.toggle("active");
+        }
+    </script>
 </body>
 </html>
